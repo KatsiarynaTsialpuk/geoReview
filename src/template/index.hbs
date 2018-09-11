@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+    <script src="https://use.fontawesome.com/2ff322f70f.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="yandex-map" id="map">
+            <div class="popup" id="popup">
+                <div class="popup__header">
+                    <div class="popup__location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <div class="popup__title">Россия, Московская область, Щёлковский район, поселок городского типа Монино</div>
+                    </div>
+                    <button class="btn btn_action_close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="popup__main">
+                    <div class="popup__content">
+                        <div class="reviews">
+                            <ul class="reviews__list"></ul>
+                        </div>
+                    </div>
+                    <div class="popup__form">
+                        <form action="#" class="review-form" id="review-form">
+                            <div class="review-form__title">Ваш отзыв</div>
+                            <input type="text" name="name" class="review-form__input" placeholder="Ваше имя" data-key="userName">
+                            <input type="text" name="location" class="review-form__input" placeholder="Укажите место" data-key="location">
+                            <textarea name="review-text" class="review-form__textarea" placeholder="Поделитесь впечатлениями" data-key="commentText"></textarea>
+                            <button class="btn btn_action_add" id="btn_action_add">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
